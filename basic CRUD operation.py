@@ -1,4 +1,3 @@
-#THEMA 1o
 #eisagw ton server MariaDB
 import mariadb
 #dhmiourgw ti sundesh me th vash dedomenwn
@@ -15,7 +14,7 @@ mycursor.execute("INSERT INTO NucleoTBL (id, sequence, seq_type, year) VALUES (%
 mycursor.execute("INSERT INTO NucleoTBL (id, sequence, seq_type, year) VALUES (%s,%s,%s,%s)", (2,"AUUUGCA", "RNA", 2000))
 connection.commit()
 
-#THEMA 2o: dhmiourgia tis zhtoumenhs klasis
+#dhmiourgia tis zhtoumenhs klasis
 class NucleoCLS:
     #dhmiourgia tou kataskeuasth me orismata ta pedia tou prwtou thematos
     def __init__(self, id, sequence, seq_type, year):
@@ -42,7 +41,7 @@ SEQ=NucleoCLS(1,"ATTTGCA", "DNA", 1963)
 SEQ.validate_seq()
 
 
-#ΤΗΕΜΑ 3: enfanish twn 4 epilogwn ston xrhsth mazi me tis plhrofories tis kathe epilogis
+#enfanish twn 4 epilogwn ston xrhsth mazi me tis plhrofories tis kathe epilogis
 try:
  x=int(input("To insert a record, please press:1 \nTo delete a record please press:2 \nTo print arecord please press:3 \nTo see the table and exit please press:4 \n"))
 
